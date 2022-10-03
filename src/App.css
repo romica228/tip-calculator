@@ -1,0 +1,20 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #c4e3e6;
+}
+
+.box {
+  width: 900px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  box-shadow: rgba(255, 255, 255, 0.025) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.111) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.243) 0px 30px 60px -30px;
+}
