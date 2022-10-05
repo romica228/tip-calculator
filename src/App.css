@@ -18,3 +18,10 @@ body {
     rgba(50, 50, 93, 0.111) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.243) 0px 30px 60px -30px;
 }
+
+#logo {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

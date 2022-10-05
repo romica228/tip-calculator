@@ -1,8 +1,12 @@
 .left-side {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   position: absolute;
+  left: 45px;
   top: 47.5%;
   transform: translate(0, -50%);
-  padding-left: 45px;
 
   display: grid;
   grid-template-columns: repeat(3, 125px);
@@ -16,17 +20,35 @@ input {
   grid-column: 1/-1;
 }
 
+.custom {
+  grid-column: 3/-1;
+  grid-row: 5/6;
+}
+
+.custom::placeholder {
+  color: #4d6f6d;
+}
+
 input {
+  color: #0d454a;
   font-size: 24px;
   background-color: #f3f8fb;
   border-style: none;
   border-radius: 7.5px;
+  text-align: right;
+  padding-right: 15px;
+  cursor: pointer;
 }
 
 input::placeholder {
   text-align: end;
   color: #a1b7b8;
-  padding-right: 15px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #6ad7cc;
+  padding-right: 13px;
 }
 
 button {
@@ -36,22 +58,35 @@ button {
   color: #f5ffff;
   border-style: none;
   border-radius: 7.5px;
+  cursor: pointer;
 }
 
-label {
+button:focus {
+  color: #0d454a;
+  background-color: #26c2ad;
+}
+
+button:hover {
+  color: #0d454a;
+  background-color: #9fe8df;
+}
+
+.label {
   font-size: 18px;
   margin-top: 30px;
   color: #646c6e;
 }
 
 .icon-1 {
+  cursor: pointer;
   position: absolute;
   top: 82.5px;
-  left: 62.5px;
+  left: 17.5px;
 }
 
 .icon-2 {
+  cursor: pointer;
   position: absolute;
   top: 407.5px;
-  left: 62.5px;
+  left: 17.5px;
 }

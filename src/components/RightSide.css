@@ -1,0 +1,57 @@
+.right-side {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  width: 380px;
+  height: 440px;
+  background-color: #00474b;
+  border-radius: 25px;
+
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+label {
+  font-size: 16px;
+  color: #f5ffff;
+}
+
+p {
+  font-size: 12px;
+  margin-top: 0;
+  color: #646c6e;
+}
+
+p:nth-child(2) {
+  font-size: 44px;
+  position: absolute;
+  top: -15px;
+  left: 190px;
+  color: #29c0ac;
+}
+
+.label1 {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+
+.label2 {
+  position: absolute;
+  top: 170px;
+  left: 30px;
+}
+
+.reset-button {
+  color: #00474b75;
+  width: 320px;
+  height: 50px;
+  background-color: #0d686d;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translate(-50%, 0);
+}

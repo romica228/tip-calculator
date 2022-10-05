@@ -6,16 +6,16 @@ const LeftSide = function () {
   return (
     <div className="left-side">
       <label className="label">Bill</label>
-      <input className="bill-number" placeholder="0"></input>
+      <input placeholder="0" type="text"></input>
       <label className="label">Select Tip %</label>
       <button>5%</button>
       <button>10%</button>
       <button>15%</button>
       <button>25%</button>
       <button>50%</button>
-      <button>Custom</button>
+      <input className="custom" placeholder="Custom" type="text"></input>
       <label className="label">Number of People</label>
-      <input className="people-number" placeholder="0"></input>
+      <input placeholder="0" type="text"></input>
       <Icon1 className="icon-1" />
       <Icon2 className="icon-2" />
     </div>
