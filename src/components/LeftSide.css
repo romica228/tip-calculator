@@ -1,3 +1,7 @@
+:root {
+  --clr-text: #0d454a;
+}
+
 .left-side {
   margin: 0;
   padding: 0;
@@ -30,7 +34,7 @@ input {
 }
 
 input {
-  color: #0d454a;
+  color: var(--clr-text);
   font-size: 24px;
   background-color: #f3f8fb;
   border-style: none;
@@ -51,6 +55,11 @@ input:focus {
   padding-right: 13px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 button {
   font-family: "SpaceMono-Bold";
   font-size: 26px;
@@ -61,14 +70,14 @@ button {
   cursor: pointer;
 }
 
-button:focus {
-  color: #0d454a;
-  background-color: #26c2ad;
+button:hover {
+  color: var(--clr-text);
+  background-color: #9fe8df;
 }
 
-button:hover {
-  color: #0d454a;
-  background-color: #9fe8df;
+button:focus {
+  color: var(--clr-text);
+  background-color: #26c2ad;
 }
 
 .label {
@@ -90,3 +99,33 @@ button:hover {
   top: 407.5px;
   left: 17.5px;
 }
+
+@media only screen and (max-width: 375px) {
+  .left-side {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(7, 50px);
+    gap: 15px;
+  }
+
+  .custom {
+    grid-column: 2/-1;
+    grid-row: 6/7;
+  }
+
+  .input {
+    box-sizing: border-box;
+    height: 50px;
+  }
+
+  .icon-2 {
+    position: absolute;
+    top: 472.5px;
+    left: 17.5px;
+  }
+} ;

@@ -6,21 +6,21 @@
   width: 380px;
   height: 440px;
   background-color: #00474b;
-  border-radius: 25px;
+  border-radius: 15px;
 
   position: absolute;
-  right: 30px;
-  top: 50%;
+  left: 450px;
+  top: 53%;
   transform: translate(0, -50%);
 }
 
 label {
-  font-size: 16px;
+  font-size: 18px;
   color: #f5ffff;
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 0;
   color: #646c6e;
 }
@@ -54,4 +54,45 @@ p:nth-child(2) {
   left: 50%;
   bottom: 8%;
   transform: translate(-50%, 0);
+  /* pointer-events: none; */
+}
+
+@media only screen and (max-width: 375px) {
+  .right-side {
+    width: 340px;
+    height: 280px;
+
+    position: absolute;
+    left: 50%;
+    top: 157.5%;
+    transform: translate(-50%, -96%);
+  }
+
+  .label1 {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+  }
+
+  .label2 {
+    position: absolute;
+    top: 125px;
+    left: 25px;
+  }
+
+  p:nth-child(2) {
+    position: absolute;
+    top: -15px;
+    left: 165px;
+  }
+
+  .reset-button {
+    width: 305px;
+    height: 50px;
+
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translate(-50%, 0);
+  }
 }
